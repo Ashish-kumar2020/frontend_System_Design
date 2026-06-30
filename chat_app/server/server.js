@@ -16,6 +16,7 @@ wss.on("connection", (ws) => {
       if (client !== ws) {
         client.send(message.toString());
       }
+      console.log(message.toString())
     });
   });
 
