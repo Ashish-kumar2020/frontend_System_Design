@@ -558,4 +558,4 @@ Composite is the final rendering stage where the browser combines painted layers
 * ✅ Repaint
 * ✅ Composite
 
-**Browser Rendering Pipeline: Completed**
+
