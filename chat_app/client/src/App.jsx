@@ -8,6 +8,9 @@ function App() {
   // We use useRef because we don't want re-renders when the socket changes.
   const socketRef = useRef(null);
 
+  const connection = navigator.connection;
+
+console.log(connection.effectiveType);
   useEffect(() => {
     // Create a new WebSocket connection
     socketRef.current = new WebSocket("ws://localhost:8080");
