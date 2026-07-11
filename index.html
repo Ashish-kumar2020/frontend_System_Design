@@ -2,13 +2,41 @@
 <html>
 <body>
 
-<video controls width="400">
+<!-- <video controls width="400">
   <source src="movie.mp4" type="video/mp4">
-</video>
+</video> -->
 
 
 <script>
-    console.log(document.querySelector("button"))
+    // console.log(document.querySelector("button"))
+
+    // function Counter(){
+    //   let count = 0;
+    //   function increment(){
+    //     count++;
+    //     console.log(count);
+    //   }
+    //   return {increment}
+    // }
+
+
+    let count = 0;
+    function Counter(){
+      function increment(){
+        count++;
+        console.log(count);
+      }
+      return {increment}
+    }
+
+    const app = Counter();
+    app.increment()
+    app.increment()
+
+    app.increment()
+
+    const app2 = Counter();
+    app2.increment()
 </script>
 </body>
 </html>
